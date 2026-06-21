@@ -125,7 +125,7 @@ export function Contact() {
                 </div>
 
                 <p className="text-xs text-foreground/50">
-                  Rezervační systém se otevře v novém okně.
+                  Rezervační systém se otevře v novém okně
                 </p>
               </div>
             </div>
