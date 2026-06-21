@@ -11,5 +11,11 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
+    // Prerender every route to static HTML so the site can be hosted as a pure
+    // static site (Netlify) — no SSR server needed (content is fully static).
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+    },
   },
 });
