@@ -5,3 +5,9 @@
 [build.environment]
   BUN_VERSION = "1.3.14"
   NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/__l5e/*"
+  to = "https://preview--malikovsky-dvur.lovable.app/__l5e/:splat"
+  status = 200
+  force = true
