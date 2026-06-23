@@ -1,7 +1,7 @@
 import { Reveal } from "./Reveal";
 import { Link } from "@tanstack/react-router";
 import {
-  ArrowUpRight,
+  
   Accessibility,
   Wifi,
   Car,
