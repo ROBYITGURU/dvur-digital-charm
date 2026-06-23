@@ -1,7 +1,7 @@
 import { Reveal } from "./Reveal";
 import { Link } from "@tanstack/react-router";
 import {
-  ArrowUpRight,
+  
   Accessibility,
   Wifi,
   Car,
@@ -347,10 +347,6 @@ export function Rooms() {
                           {room.name}
                         </h4>
                       </div>
-                      <ArrowUpRight
-                        size={18}
-                        className="mt-1 shrink-0 text-foreground/30 transition-all group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1"
-                      />
                     </div>
 
                     {/* Description */}
