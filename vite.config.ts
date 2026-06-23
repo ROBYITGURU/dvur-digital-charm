@@ -6,15 +6,4 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-// @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
-export default defineConfig({
-  tanstackStart: {
-    // Prerender every route to static HTML so the site can be hosted as a pure
-    // static site (Netlify) — no SSR server needed (content is fully static).
-    prerender: {
-      enabled: true,
-      crawlLinks: true,
-    },
-  },
-});
+export default defineConfig({});
