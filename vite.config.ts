@@ -6,4 +6,13 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig({});
+// Prerender každou routu do statického HTML (dist/client) → web jde hostovat staticky na Netlify.
+// ⚠️ vite.config.ts vlastní Lovable a tenhle blok může při své úpravě kdykoli přepsat pryč
+// (přesně to 2026-06-23 srazilo web na 404 — viz ../INCIDENTS.md). Pro ten případ ho Netlify
+// build znovu doplní přes scripts/ensure-prerender.mjs (zapojeno v netlify.toml), takže hosting
+// je odolný i bez tohoto bloku. Necháváme ho tu i tak — ať lokální `bun run build` funguje sám.
+export default defineConfig({
+  tanstackStart: {
+    prerender: { enabled: true, crawlLinks: true },
+  },
+});

@@ -1,5 +1,8 @@
 [build]
-  command = "bun run build"
+  # ensure-prerender: doplní prerender do vite.config.ts, pokud ho Lovable přepsal pryč.
+  # test -f index.html: tvrdá pojistka — když build nevyrobí statické HTML (prázdný deploy),
+  # build NAHLAS spadne a Netlify nechá naživo poslední funkční deploy (žádný tichý 404).
+  command = "node scripts/ensure-prerender.mjs && bun run build && test -f dist/client/index.html"
   publish = "dist/client"
 
 [build.environment]
