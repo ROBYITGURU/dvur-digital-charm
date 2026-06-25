@@ -18,6 +18,7 @@ import {
   ChefHat,
   Home,
   Mountain,
+  Trees,
   Users,
   Building2,
   ExternalLink,
