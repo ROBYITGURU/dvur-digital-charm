@@ -149,6 +149,7 @@ const dining = [
     icon: Wine,
     title: "Moravská vína & pípa",
     text: "Dobrá moravská vína, čepované pivo z Kamenice nad Lipou a točená bezinková limonáda.",
+  },
   {
     icon: Trees,
     title: "Vše na krásném místě",
