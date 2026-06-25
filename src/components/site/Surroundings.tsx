@@ -32,9 +32,6 @@ const tips = [
   { title: "Golf", text: "Dvě hřiště na dosah: Club Mnich (18 jamek) a Golf Resort Haugschlag u rakouských hranic.", url: "https://www.golfmnich.cz" },
   { title: "Aquapark a bazén", text: "Místní bazén s aqua parkem v Jindřichově Hradci potěší především děti.", url: "https://www.tsjh.cz" },
   { title: "Tenis, koně a alpaky", text: "Antukový kurt v Horní Pěně, jezdecká stáj v Rodvínově, farma Alpaka v Dobré Vodě." },
-  { title: "Tip na výlet", text: "Text doplníme." },
-  { title: "Tip na výlet", text: "Text doplníme." },
-  { title: "Tip na výlet", text: "Text doplníme." },
 ];
 
 export function Surroundings() {
