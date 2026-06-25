@@ -1,8 +1,12 @@
 [build]
+  # pin-config + bun install: Lovable si sám povyšuje @lovable.dev/vite-tanstack-config; novější
+  #   verze (2.6.2) přesouvá výstup z dist/ do .output/ → rozbije prerender i publish cestu.
+  #   pin-config.mjs verzi přepíše zpět na ověřenou 2.5.3, bun install ji reálně doinstaluje.
+  #   (viz ../INCIDENTS.md 2026-06-25)
   # ensure-prerender: doplní prerender do vite.config.ts, pokud ho Lovable přepsal pryč.
   # test -f index.html: tvrdá pojistka — když build nevyrobí statické HTML (prázdný deploy),
   # build NAHLAS spadne a Netlify nechá naživo poslední funkční deploy (žádný tichý 404).
-  command = "node scripts/ensure-prerender.mjs && bun run build && test -f dist/client/index.html"
+  command = "node scripts/pin-config.mjs && bun install && node scripts/ensure-prerender.mjs && bun run build && test -f dist/client/index.html"
   publish = "dist/client"
 
 [build.environment]
