@@ -149,8 +149,13 @@ const dining = [
     icon: Wine,
     title: "Moravská vína & pípa",
     text: "Dobrá moravská vína, čepované pivo z Kamenice nad Lipou a točená bezinková limonáda.",
+  {
+    icon: Trees,
+    title: "Vše na krásném místě",
+    text: "Snídaně i večery u grilu si vychutnáte na našem dvoře a v zahradě — uprostřed klidu České Kanady, mezi stromy a loukami.",
   },
 ];
+
 
 const amenities = [
   { icon: ChefHat, title: "Společná kuchyň", text: "Celý den k dispozici — lednice, sporák, mikrovlnka, kávovar." },
