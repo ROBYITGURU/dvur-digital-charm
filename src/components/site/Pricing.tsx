@@ -91,7 +91,8 @@ const goodToKnow = [
   "Na jednu noc neubytováváme přes víkendy a k cenám se připočítává 25 % z jejich výše.",
   "V případě svátků navazujících na víkendy nabízíme pobyty vždy na všechny volné dny.",
   "Rekreačně-pobytový poplatek obci činí 10 Kč za noc pro dospělou osobu.",
-  "Zvířata bohužel neubytováváme.\n• Příjezd od 15:30, odjezd do 10:00, mimo prázdniny je možno domluvit.",
+  "Zvířata bohužel neubytováváme.",
+  "Příjezd od 15:30, odjezd do 10:00, mimo prázdniny je možno domluvit.",
 ];
 
 const cancellation = [
