@@ -4,7 +4,7 @@ import { Pricing } from "@/components/site/Pricing";
 import breakfast from "@/assets/breakfast.jpg";
 
 export const Route = createFileRoute("/cenik")({
-  /* head: () => ({
+  head: () => ({
     meta: [
       { title: "Ceník ubytování — Malíkovský Dvůr" },
       {
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/cenik")({
       { property: "og:description", content: "Ceny pokojů a apartmánů včetně snídaně a kompletního servisu." },
       { property: "og:image", content: breakfast },
     ],
-  }), */
+  }),
   component: () => (
     <main>
       <PageHeader
