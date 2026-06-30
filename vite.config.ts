@@ -13,6 +13,6 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // je odolný i bez tohoto bloku. Necháváme ho tu i tak — ať lokální `bun run build` funguje sám.
 export default defineConfig({
   tanstackStart: {
-    prerender: { enabled: true, crawlLinks: true },
+    prerender: { enabled: false },
   },
 });
