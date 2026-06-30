@@ -75,7 +75,7 @@ export default {
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
-      console.error(error);
+      process.stderr.write(`FETCH ERROR DETECTED: ${error instanceof Error ? error.stack : JSON.stringify(error)}\n`);
       return brandedErrorResponse(error);
     }
   },
