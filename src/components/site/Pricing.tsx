@@ -120,10 +120,17 @@ export function Pricing() {
             </Reveal>
           </div>
           <Reveal delay={150}>
-            <p className="max-w-md text-foreground/70 leading-relaxed">
-              Všechny ceny jsou za jednu noc a zahrnují snídani formou švédského stolu a všechny
-              nabízené služby penzionu. Platnost: 1. 1.–31. 12. 2026.
-            </p>
+            <div className="max-w-md space-y-4">
+              <p className="text-foreground/70 leading-relaxed whitespace-pre-line">
+                Všechny ceny jsou za jednu noc a zahrnují snídani formou švédského stolu a všechny
+                nabízené služby penzionu. Platnost: 1. 1.–31. 12. 2026.{"\n"}
+                Last minute{"\u00A0"}
+              </p>
+              <div className="text-accent font-medium leading-relaxed whitespace-pre-line">
+                Last minute sleva v týdnu 11.-18.7.2026, ubytování{"\n"}
+                je možné minimálně{"\u00A0"}na pět nocí se slevou 15%.
+              </div>
+            </div>
           </Reveal>
         </div>
 
