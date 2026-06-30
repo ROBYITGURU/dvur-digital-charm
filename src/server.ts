@@ -18,9 +18,8 @@ async function getServerEntry(): Promise<ServerEntry> {
   return serverEntryPromise;
 }
 
-function brandedErrorResponse(error?: any): Response {
-  const message = error instanceof Error ? error.stack : JSON.stringify(error);
-  return new Response(`ERROR: ${message}\n\n${renderErrorPage()}`, {
+function brandedErrorResponse(): Response {
+  return new Response(renderErrorPage(), {
     status: 500,
     headers: { "content-type": "text/html; charset=utf-8" },
   });
