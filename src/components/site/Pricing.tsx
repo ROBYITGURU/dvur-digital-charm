@@ -91,7 +91,7 @@ const goodToKnow = [
   "Na jednu noc neubytováváme přes víkendy a k cenám se připočítává 25 % z jejich výše.",
   "V případě svátků navazujících na víkendy nabízíme pobyty vždy na všechny volné dny.",
   "Rekreačně-pobytový poplatek obci činí 10 Kč za noc pro dospělou osobu.",
-  "Zvířata bohužel neubytováváme.",
+  "Zvířata bohužel neubytováváme.\n• Příjezd od 15:30, odjezd do 10:00, mimo prázdniny je možno domluvit.",
 ];
 
 const cancellation = [
@@ -214,7 +214,7 @@ export function Pricing() {
               <h3 className="font-serif text-2xl">Dobré vědět</h3>
               <ul className="mt-6 space-y-3 text-sm leading-relaxed text-foreground/75">
                 {goodToKnow.map((g, i) => (
-                  <li key={i}>• {g}</li>
+                  <li key={i} className="whitespace-pre-line">• {g}</li>
                 ))}
               </ul>
             </div>
