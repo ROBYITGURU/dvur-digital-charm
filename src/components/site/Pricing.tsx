@@ -214,7 +214,7 @@ export function Pricing() {
               <h3 className="font-serif text-2xl">Dobré vědět</h3>
               <ul className="mt-6 space-y-3 text-sm leading-relaxed text-foreground/75">
                 {goodToKnow.map((g, i) => (
-                  <li key={i}>• {g}</li>
+                  <li key={i} className="whitespace-pre-line">• {g}</li>
                 ))}
               </ul>
             </div>
