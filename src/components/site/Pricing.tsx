@@ -129,7 +129,8 @@ export function Pricing() {
               </p>
               <div className="text-accent font-medium leading-relaxed whitespace-pre-line">
                 Last minute sleva v týdnu 11.-18.7.2026, ubytování{"\n"}
-                je možné minimálně{"\u00A0"}na pět nocí se slevou 15%.
+                je možné minimálně{"\u00A0"}na pět nocí se slevou 15%.{"\n"}
+                Neváhejte, vezměte milou/milého, děti, kola a vyražte.
               </div>
             </div>
           </Reveal>
